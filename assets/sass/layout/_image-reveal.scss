@@ -1,0 +1,83 @@
+/**----------------------------------------
+START: Img Reveal CSS
+----------------------------------------*/
+.image-reveal-section {
+    padding: 120px 9%;
+}
+
+.image-reveal-container {
+    .image-reveal-row {
+        align-items: center;
+        .image-reveal-box {
+            padding-right: 35px;
+            .image-reveal-img {
+                position: relative;
+                overflow: hidden;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 200%;
+                    height: 0%;
+                    left: 50%;
+                    top: 50%;
+                    background-color: rgba(255,255,255,.3);
+                    transform: translate(-50%,-50%) rotate(-45deg);
+                    z-index: 1;
+                }
+                &:hover::after {
+                    height: 250%;
+                    transition: all 600ms linear;
+                    background-color: transparent;
+                }
+            }
+            .reveal {
+                position: relative;
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                visibility: hidden;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    -webkit-transform-origin: left;
+                    transform-origin: left;
+                }
+            }
+        }
+        .image-reveal-box1 {
+            .image-reveal-content {
+                h4 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #000;
+                }
+                h1 {
+                    font-size: 42px;
+                    font-weight: 700;
+                    line-height: 55px;
+                    color: #1E8A8A;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #666;
+                }
+                .image-reveal-btn {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+/**----------------------------------------
+END: Img Reveal CSS
+----------------------------------------*/

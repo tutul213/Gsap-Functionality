@@ -1,0 +1,57 @@
+/**----------------------------------------
+START: Marquee CSS
+----------------------------------------*/
+.marquee-container {
+    align-items: center;
+    border-top: 1px solid #00000034;
+    border-bottom: 1px solid #00000034;
+    padding: 10px;
+    .marquee-row {
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear !important;
+        .marquee-item {
+            width: auto !important;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+            align-items: center;
+            gap: 20px;
+            padding-right: 20px;
+            .marquee-item-content {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .marquee-img {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                }
+
+                .marquee-title {
+                    h1 {
+                        font-size: 100px;
+                        font-weight: 600;
+                        line-height: 1.2;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke: 2px;
+                        color: #1e8a8a;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            -webkit-text-fill-color: #1e8a8a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/**----------------------------------------
+END: Marquee CSS
+----------------------------------------*/

@@ -1,0 +1,102 @@
+/**----------------------------------------
+START: Marquee2 CSS
+----------------------------------------*/
+.marquee2-section {
+    position: relative;
+    padding-bottom: 150px;
+}
+.marquee2-container {
+    background: var(--ih-color-common-white);
+    rotate: -4deg;
+    padding: 20px;
+    inset-inline-start: 0;
+    z-index: 2;
+    .marquee2-row {
+        align-items: center;
+        --webkit-animation-timing-function: linear;
+        transition-timing-function: linear;
+        .marquee2-item {
+            width: auto;
+            display: inline-block;
+            .marquee2-content {
+                display: flex;
+                align-items: center;
+                gap: 35px;
+                h1 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: #1e8a8a;
+                    padding-left: 35px;
+                }
+                .marquee2-icon {
+                    animation: marquee2-icon 6s linear infinite;
+                    i {
+                        font-size: 16px;
+                        color: #1e8a8a;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.marquee2-container1 {
+    background: #1e8a8a;
+    rotate: 4deg;
+    padding: 20px;
+    inset-inline-start: 0;
+    z-index: 3;
+    top: -50px;
+    .marquee2-row1 {
+        align-items: center;
+        --webkit-animation-timing-function: linear;
+        transition-timing-function: linear;
+        .marquee2-item1 {
+            width: auto;
+            display: inline-block;
+            .marquee2-content1 {
+                display: flex;
+                align-items: center;
+                gap: 35px;
+                h1 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: #fff;
+                    padding-left: 35px;
+                }
+                .marquee2-icon1 {
+                    animation: marquee2-icon1 6s linear infinite;
+                    i {
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes marquee2-icon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes marquee2-icon1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+/**----------------------------------------
+End: Marquee2 CSS
+----------------------------------------*/

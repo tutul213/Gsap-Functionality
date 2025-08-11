@@ -1,0 +1,65 @@
+/**----------------------------------------
+START: Count CSS
+----------------------------------------*/
+.count-section {
+    padding: 7rem 9%;
+    background-color: #D8E5E5;
+}
+
+.count-container {
+    .count-row {
+        align-items: center;
+        .count-box {
+            padding-right: 10px;
+            position: relative;
+            z-index: 10;
+            .count-item {
+                padding: 20px;
+                background-color: #fff;
+                .count-item-icon {
+                    padding: 10px;
+                    border: 1px solid #000;
+                    display: inline-block;
+                    border-radius: 100px;
+                    margin-bottom: 10px;
+                    i {
+                        font-size: 20px;
+                        color: #000;
+                    }
+                }
+
+                h1 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #364e52;
+                }
+
+                .inline-content {
+                    position: relative;
+                    display: inline-block;
+                    .countup-number {
+                        font-size: 74px;
+                        font-weight: 500;
+                        line-height: 74px;
+                        color: #000;
+                    }
+                    .count-plus {
+                        font-size: 74px;
+                        font-weight: 500;
+                        line-height: 1;
+                        color: #000;
+                        position: absolute;
+                        right: -60px;
+                        bottom: 10px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/**----------------------------------------
+END: Count CSS
+----------------------------------------*/

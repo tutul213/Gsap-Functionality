@@ -1,0 +1,87 @@
+/**----------------------------------------
+START: Back to top CSS
+----------------------------------------*/
+.back-to-top-wrapper {
+  position: fixed;
+  right: 60px;
+  bottom: 0;
+  display: block;
+  border-radius: 50%;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .back-to-top-wrapper {
+    right: 45px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .back-to-top-wrapper {
+    right: 15px;
+  }
+}
+
+.back-to-top-btn {
+  color: var(--ih-color-heading-primary);
+  line-height: 1;
+  font-weight: var(--ih-fw-sbold);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+}
+.back-to-top-btn span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 17px;
+  outline: none;
+  color: var(--ih-color-common-white);
+  background-color: var(--ih-color-theme-primary);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 1px var(--ih-color-grey-1);
+          box-shadow: 0 0 0 1px var(--ih-color-grey-1);
+}
+
+.back-to-top-wrapper.back-to-top-btn-show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 85px;
+}
+.back-to-top-wrapper.back-to-top-btn-show:hover {
+  -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .back-to-top-wrapper.back-to-top-btn-show {
+    right: 30px;
+    bottom: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .back-to-top-wrapper.back-to-top-btn-show {
+    bottom: 25px;
+  }
+}
+
+/* !END: Back to top CSS */

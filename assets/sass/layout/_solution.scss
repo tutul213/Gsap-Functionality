@@ -1,0 +1,166 @@
+.solution-section {
+    position: relative;
+}
+
+.solution-container {
+    position: relative;
+    .solution-row {
+        .solution-box {
+            width: 100%;
+            .solution-item {
+                background: var(--ih-color-common-white);
+                padding: 40px 30px 45px;
+                margin-bottom: 30px;
+                position: relative;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: all .4s ease;
+                &:hover {
+                    background-color: #1E8A8A;
+                }
+                &:hover .solution-title .solution-icon {
+                    border-color: #fff;
+                }
+                &:hover .solution-title .solution-icon i {
+                    color: #fff;
+                }
+                &:hover .solution-title h4 a {
+                    color: #fff;
+                }
+                &:hover .solution-title h4 a:hover {
+                    color: #fff;
+                }
+                &:hover .solution-content .desc {
+                    color: #fff;
+                }
+                &:first-child .service-reveal-bg {
+                    margin-top: 40px;
+                }
+                &:last-child .service-reveal-bg {
+                    margin-top: -40px
+                }
+                &:hover .service-reveal-bg {
+                    opacity: 1;
+                    -webkit-transform: translate(-50%, -50%) scale(1);
+                        -ms-transform: translate(-50%, -50%) scale(1);
+                            transform: translate(-50%, -50%) scale(1);
+                }
+                .solution-title {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    .solution-icon {
+                        font-size: 50px;
+                        width: 80px;
+                        height: 80px;
+                        background: linear-gradient(-45deg, rgba(30, 138, 138, 0.3) 0%, rgba(30, 138, 138, 0) 50%, rgba(30, 138, 138, 0.3) 100%);
+                        border-radius: 50%;
+                        border: 1px solid rgba(30, 138, 138, 0.15);
+                        display: -webkit-inline-box;
+                        display: -ms-inline-flexbox;
+                        display: inline-flex;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
+                        line-height: 1;
+                        -webkit-box-flex: 0;
+                            -ms-flex: 0 0 auto;
+                                flex: 0 0 auto;
+                        -webkit-transition: all 0.4s ease-in-out;
+                        transition: all 0.4s ease-in-out;
+                        z-index: 10;
+                        i {
+                            color: var(--ih-color-theme-primary);
+                            display: -webkit-inline-box;
+                            display: -ms-inline-flexbox;
+                            display: inline-flex;
+                            line-height: 1;
+                        }
+                    }
+
+                    h4 {
+                        max-width: 300px;
+                        -webkit-transition: none;
+                        transition: none;
+                        a {
+                            font-size: 24px;
+                            font-weight: 600;
+                            line-height: 28px;
+                            color: #000;
+                            text-decoration: none;
+                            transition: all 0.3s ease;
+                            &:hover {
+                                color: var(--ih-color-theme-primary);
+                            }
+                        }
+                    }
+                }
+
+                .solution-content {
+                    .desc {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #000;
+                        max-width: 360px;
+                        width: 100%;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .service-reveal-bg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 291px;
+                    height: 303px;
+                    opacity: 0;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    pointer-events: none;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    -webkit-transform: translate(-50%, -50%) scale(0.7);
+                        -ms-transform: translate(-50%, -50%) scale(0.7);
+                            transform: translate(-50%, -50%) scale(0.7);
+                    transition: opacity 0.6s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+                    z-index: 5;
+                    &:first-child {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .solution-container .solution-row .solution-box .solution-item .service-reveal-bg {
+        width: 260px;
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+    .solution-container .solution-row .solution-box .solution-item .service-reveal-bg {
+        display: none;
+    }
+
+    .solution-container .solution-row .solution-box .solution-item {
+        background: var(--ih-color-common-white);
+        padding: 30px 20px 35px;
+        margin-bottom: 30px;
+        position: relative;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        transition: all 0.4s ease;
+    }
+}

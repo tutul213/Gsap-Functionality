@@ -1,0 +1,241 @@
+/**----------------------------------------
+START: Heading CSS
+----------------------------------------*/
+.sec-heading {
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  width: 100%;
+  margin-bottom: 52px;
+}
+.sec-heading-centered {
+  max-width: 550px;
+  text-align: center;
+}
+.sec-heading .sec-title {
+  margin-bottom: 0;
+  font-size: 48px;
+  font-weight: 500;
+}
+.sec-heading .sec-title span {
+  color: var(--ih-color-theme-primary);
+}
+.sec-heading .sub-title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  color: var(--ih-color-heading-primary);
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-weight: var(--ih-fw-bold);
+  border: 1px dashed var(--ih-color-border-1);
+  padding: 2px 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.sec-heading .sub-title i {
+  color: var(--ih-color-theme-primary);
+  font-size: 22px;
+  line-height: 1;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .sec-heading .sub-title {
+    margin-bottom: 15px;
+  }
+}
+.sec-heading .sub-title.text-white {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .sec-heading .sub-title {
+    font-size: 13px;
+  }
+
+.sec-heading .sec-title {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 500;
+} 
+}
+.sec-heading.style-2 .sec-title span {
+  color: var(--ih-color-text-body-2);
+}
+.sec-heading.style-2 .sub-title {
+  color: var(--ih-color-theme-primary);
+  background-color: var(--ih-color-common-white);
+  border: 0;
+  padding: 7px 10px;
+}
+.sec-heading.style-3 .sub-title {
+  color: var(--ih-color-theme-primary);
+  padding: 0;
+  border: 0;
+}
+.sec-heading.style-4 .sub-title {
+  color: var(--ih-color-theme-primary);
+  border-color: var(--ih-color-theme-primary);
+}
+.sec-heading.style-6 .sub-title {
+  padding: 4px 8px;
+}
+.sec-heading.style-7 .sub-title {
+  color: var(--ih-color-heading-primary);
+  padding: 4px 8px;
+}
+.sec-heading.style-8 .sub-title {
+  color: var(--ih-color-theme-primary);
+  border: 0;
+  padding: 0 0 0 12px;
+  position: relative;
+}
+.sec-heading.style-8 .sub-title::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--ih-color-theme-primary);
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .sec-heading {
+    margin-bottom: 35px;
+  }
+}
+
+.heading-wrap-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 52px;
+}
+.heading-wrap-content .sec-heading {
+  max-width: 500px;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  margin-bottom: 0;
+}
+.heading-wrap-content .desc {
+  max-width: 360px;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .heading-wrap-content .desc {
+    max-width: 100%;
+  }
+}
+.heading-wrap-content .btn-wrap {
+  max-width: 220px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .heading-wrap-content {
+    margin-bottom: 35px;
+  }
+}
+
+.sec-heading-wrap .sub-title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  color: var(--ih-color-heading-primary);
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-weight: var(--ih-fw-bold);
+  border: 1px dashed var(--ih-color-border-1);
+  padding: 2px 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.sec-heading-wrap .sub-title i {
+  color: var(--ih-color-theme-primary);
+  font-size: 22px;
+  line-height: 1;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .sec-heading-wrap .sub-title {
+    margin-bottom: 15px;
+  }
+}
+.sec-heading-wrap.style-3 .sub-title {
+  color: var(--ih-color-theme-primary);
+  padding: 0;
+  border: 0;
+}
+
+.content-wrap .sec-heading {
+  max-width: 550px;
+  margin: 0 0 20px 0;
+}
+.content-wrap .desc {
+  margin-bottom: 0;
+}
+.content-wrap .ih-primary-btn {
+  margin-top: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .content-wrap .ih-primary-btn {
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .content-wrap .desc br {
+    display: none;
+  }
+}
+
+.title-anim > div {
+  overflow: hidden;
+}
+
+.ih-text-invert > div {
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--ih-color-heading-primary)), color-stop(50%, var(--ih-color-text-body-2)));
+  background-image: linear-gradient(to right, var(--ih-color-heading-primary) 50%, var(--ih-color-text-body-2) 50%);
+}
+
+.line {
+  position: relative;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  --highlight-offset: 0%;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--ih-color-heading-primary)), to(var(--ih-color-text-body-2)));
+  background-image: linear-gradient(90deg, var(--ih-color-heading-primary) var(--highlight-offset), var(--ih-color-text-body-2) var(--highlight-offset));
+}
+
+/* !END: Heading CSS */
